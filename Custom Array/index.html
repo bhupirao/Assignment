@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Custom Array
+</body>
+</html>
+<script>
+
+let arr =[1,4,6,7,8]
+function myArray(){
+    Object.defineProperty(this,"length",{
+        value:0,
+        writable:true,
+        enumerable:false,
+    });
+    this.length =arguments.length;
+    for(let i=0;i<arguments.length;i++){
+        this[i]=arguments[i];
+    }
+}
+
+
+myArray.prototype.push =function(value){
+    this[this.length]=value;
+    this.length++;
+}
+myArray.prototype.pop =function(){
+    delete this[this.length-1]
+    this.length--;
+}
+myArray.prototype.print =function(){
+    for(let i=0;i<arguments.length;i++){
+        console.log(Object.values(arguments))
+    }
+}
+myArray.prototype.reverse =function(){
+    for(let i=arguments.length-1;i<=0;i--){
+        console.log(Object.values(this))
+    }
+}
+myArray.prototype.length =function(){
+    console.log(Object.values.arguments.length)
+    
+}
+
+arr.push(9)
+arr.push(11)
+arr.pop()
+arr.reverse()
+
+console.log(Object.values(arr))
+</script>
