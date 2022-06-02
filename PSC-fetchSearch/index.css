@@ -1,0 +1,54 @@
+input{
+    width: 35%;
+    margin: auto;
+  margin-left: 500px;
+  height: 45px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-size: 16px;
+  padding-left: 15px;
+  background-color: rgb(68, 68, 68);
+  color: white;
+  border-bottom: none;
+
+}
+h1{
+    text-align: center;
+    margin: auto;
+    margin-top: 250px;
+    width: 5%;
+    font-size: 48px;
+    color: blue;
+}
+#starwar{
+    border: solid 1px black;
+    height: 200px;
+    width: 36.2%;
+    margin-left: 500px;
+    border-top:none ;
+    overflow: scroll;
+    background-color: rgb(68, 68, 68);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: rgb(231, 228, 228);
+    background: none;border: none;
+    
+}
+#flex{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+p{
+    padding-left: 10px;
+}
+div{
+    line-height: 0px;
+}
+body{
+background-image:  url("https://media.istockphoto.com/photos/hunting-rebels-picture-id544671790?k=20&m=544671790&s=612x612&w=0&h=OR_O6-Dh_NS6ndjYtHWF8rc_P0Qh4okpgG03NgioirI=");
+    background-size: cover;
+}
+#name{
+    color: rgb(247, 215, 36);
+}
